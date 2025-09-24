@@ -81,6 +81,12 @@
                 text-align: center;
                 margin-top: 10px;
             }
+          .logo img {
+    max-width: 75%;  /* Logo takes up to 75% of the container width */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Remove unwanted spacing below the image */
+    margin: 0 auto;  /* Center the image within its container */
+}
         }
     </style>
 
@@ -101,7 +107,11 @@ window.smartsupp||(function(d) {
 
 {% block content %}
 <header>
-        <div class="logo">Ccleaner Blog</div>
+        <header>
+    <div class="logo">
+        <img src="https://ccleanerpronow.github.io/ccleaner-logo.PNG">
+    </div>        
+</header>
         
     </header>
   <div class="container" style="background-color: #fefefe; padding: 1.5em; border: 1px solid #ccc; margin-bottom: 2em;">
